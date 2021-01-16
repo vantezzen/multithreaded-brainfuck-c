@@ -2,11 +2,13 @@
 
 Are you worried that your brainfuck code might not perform excellent when its serving thousands of users in production? Or are you trying to train highly complicated AI inside your brainfuck program?
 
-Then look no further than multithreaded-brainfuck-c - a Brainfuck interpreter that allows writing Brainfuck programs with multithreading. It is written in C so you can expect highest performance for your brainfuck code!
+Then look no further than multithreaded-brainfuck-c - a Brainfuck interpreter that allows writing Brainfuck programs with multithreading. Of yes, of course it is written in C so you can expect highest performance for your brainfuck code!
 
 This interpreter adds a new symbol "/" which will act like the "[fork(2)](https://man7.org/linux/man-pages/man2/fork.2.html)" system command and will create a new thread at the current position.
 
 All brainfuck threads share the same data stack so you can work on the same values and share results.
+
+> Disclaimer: This repo is really just for fun. You probably shouldn't create a production with multithreaded brainfuck. This interpreter is also far from perfect, this is my first project in C - feel free to create a PR if you find something that could be improved
 
 # Symbols
 
