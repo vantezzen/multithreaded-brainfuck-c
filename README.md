@@ -39,6 +39,16 @@ You can use the `/` symbol to fork the program at the current position.
 
 This will continue executing the program normally on the main thread but will **skip 20 symbols** on the forked thread. In these 20 characters you can add your code that may allow you to distinguish between whether you are on the main thread or on the child thread.
 
+```
+
+Code:         + + / + + + + > - < + + + + + + + + + + + + + > + + + +
+
+Main Thread:  + + / + + + + > - < + + + + + + + + + + + + + > + + + +
+                   ↘ Fork
+Child Thread:        (Skip first 20 characters)             > + + + +
+
+```
+
 If you don't have code to fill all 20 characters, you can add the Noop character (`#`) to fill remaining characters.
 
 You can also add the "%" symbol if you are done with computing on your children. When a child process (i.e. all processes except the main thread) sees this symbol in its code, it will end itself. 
