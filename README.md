@@ -8,7 +8,8 @@ This interpreter adds a new symbol "/" which will act like the "[fork(2)](https:
 
 All brainfuck threads share the same data stack so you can work on the same values and share results.
 
-> Disclaimer: This repo is really just for fun. You probably shouldn't create a production with multithreaded brainfuck. This interpreter is also far from perfect, this is my first project in C - feel free to create a PR if you find something that could be improved
+> Disclaimer: This repo is really just for fun. You probably shouldn't create a production system with multithreaded brainfuck.
+> This interpreter is also far from perfect, this is my first project in C - feel free to create a PR if you find something that could be improved.
 
 # Symbols
 
